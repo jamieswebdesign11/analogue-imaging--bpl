@@ -1,0 +1,404 @@
+.jpn-tabs-activated {
+    padding-left: 45px;
+    position: relative;
+}
+
+.jpn-tabs-activated > .acf-repeater > table > tbody > tr > td.acf-row-handle.order, .jpn-tabs-activated > .acf-repeater > table > tbody > tr > td.acf-row-handle.remove > a.acf-icon.-plus.small, .jpn-tabs-activated > .acf-repeater > table > thead > tr > th.acf-row-handle:first-child {
+    display:none;
+}
+
+.jpn-tabs-activated > .acf-repeater > table > tbody > tr.acf-row:not(.active) { 
+    display:none;
+}
+
+.jpn-hidden-button {
+    visibility:none;
+    position:absolute;
+    top:-500px;
+    left:-500px;
+}
+
+.jpn-tabs-activated > .jpn-acf-tabs {
+    min-height: 20px;
+    background: #f5f5f5;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;  
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.jpn-tabs-activated > .jpn-acf-tabs {
+    width: 100%;
+	display:table;
+}
+
+.jpn-tabs-activated > .jpn-acf-tabs > .nav > ul,
+.jpn-tabs-activated > .jpn-acf-tabs > .add > ul {
+    position:relative;
+    padding:0;
+    margin:0;
+    list-style-type:none;
+    width:45px;
+}
+
+.jpn-tabs-activated > .jpn-acf-tabs > .nav > ul > li > .jpn-acf-tab, 
+.jpn-tabs-activated > .jpn-acf-tabs > .add > ul > li > .acf-button, 
+.jpn-tabs-activated > .jpn-acf-tabs > .add > ul > li > .jpn-remove-row {
+    height: 30px;
+    display: block;
+    line-height: 30px;
+    font-size: 12px;
+    color: #666666;
+    padding: 0;
+    text-decoration: none;
+    background: #eaeaea;
+    -webkit-transition: 0.3s all;
+    transition: 0.3s all;
+    width: 45px;
+    text-align: left;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.jpn-tabs-activated > .jpn-acf-tabs > .add > ul > li > .acf-button,
+.jpn-tabs-activated > .jpn-acf-tabs > .add > ul > li > .jpn-remove-row  {
+    line-height: normal;
+    padding: 6px;
+    text-align: center;
+}
+
+.jpn-tabs-activated > .jpn-acf-tabs > .add > .jpn-remove-row  {
+    position:relative;
+    margin-top:5px;
+}
+
+.jpn-tabs-activated > .jpn-acf-tabs > .nav > ul > li > .jpn-acf-tab {
+    padding-left:30px;
+}
+
+.jpn-tabs-activated > .jpn-acf-tabs > .nav > ul > li > .jpn-acf-tab > span  {
+    border-radius: 50%;
+    min-width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    background: #95c6e5;
+    color: #355f79;
+    font-weight: bold;
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+    pointer-events: none;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+
+.jpn-tabs-activated > .jpn-acf-tabs > .nav > ul > li > .jpn-acf-tab.active > span  {
+    color: #355f79;
+    background: #ffffff;
+}
+
+.jpn-tabs-activated > .jpn-acf-tabs > .nav > ul > li > .jpn-acf-tab {
+    border-bottom:1px solid #d4d4d4;
+    position:relative;
+}
+
+.jpn-tabs-activated > .jpn-acf-tabs > .nav > ul > li > .jpn-acf-tab:hover {
+    color:#3b3b3b;
+    background:#d4d4d4;
+}
+
+.jpn-tabs-activated > .jpn-acf-tabs > .nav > ul > li > .jpn-acf-tab.active {
+    color:#ffffff;
+    background:#00a0d2;
+}
+
+.jpn-tabs-activated > .jpn-acf-tabs > .nav > ul > li > .jpn-acf-tab.active:after {
+    content:'\f077';
+    font-family:'FontAwesome';
+    width:20px;
+    height:20px;
+    display:block;
+    opacity:0;
+    background:#cccccc;
+    text-align:center;
+    color:#666666;
+    transition:0.3s all;
+    transform:rotate(0deg);
+    position:absolute;
+    z-index:10;
+    border-radius:50%;
+    bottom:4px;
+    left:12px;
+    line-height:20px;
+    box-sizing: border-box;
+}
+
+.jpn-tabs-activated > .jpn-acf-tabs > .nav > ul > li > .jpn-acf-tab.active:not(.-collapsed):hover:after {
+    transform:rotate(0deg);
+    opacity:1;
+}
+
+.jpn-tabs-activated > .jpn-acf-tabs > .nav > ul > li > .jpn-acf-tab.active.-collapsed:hover:after {
+    transform:rotate(180deg);
+    opacity:1;
+}
+
+.jpn-tabs-activated > .jpn-acf-tabs > .add > ul > li > .acf-button {
+    color:#ffffff;
+    background:#1d6977;
+}
+
+.jpn-tabs-activated > .jpn-acf-tabs > .add > ul > li > .jpn-remove-row {
+    color:#ffffff;
+    background:#931414;
+    -webkit-transition:0.3s;
+    transition:0.3s;
+    position:relative;
+}
+
+.jpn-tabs-activated > .jpn-acf-tabs > .add > .jpn-remove-row > .jpn-confirm-delete {
+    color:#ffffff;
+    background:#6d0a0a;
+    width:100px;
+    position:absolute;
+    right:90%;
+    top:0;
+    height:30px;
+    z-index:99;
+    pointer-events:none;
+    -webkit-transition:0.3s;
+    transition:0.3s;
+    opacity:0;
+}
+
+.jpn-tabs-activated > .jpn-acf-tabs > .add > .jpn-remove-row:hover > .jpn-confirm-delete {
+    opacity:1;
+    right:100%;
+    cursor:pointer;
+    pointer-events:all;
+}
+
+.jpn-tabs-activated > .jpn-acf-tabs > .add > .jpn-remove-row > .jpn-confirm-delete > span {
+    -webkit-transition:0.3s;
+    transition:0.3s;
+    opacity:0;
+}
+
+.jpn-tabs-activated > .jpn-acf-tabs > .add > .jpn-remove-row > .jpn-confirm-delete:hover > span.normal,
+.jpn-tabs-activated > .jpn-acf-tabs > .add > .jpn-remove-row > .jpn-confirm-delete > span.hover {
+    opacity:0;
+}
+
+.jpn-tabs-activated > .jpn-acf-tabs > .add > .jpn-remove-row > .jpn-confirm-delete > span.normal,
+.jpn-tabs-activated > .jpn-acf-tabs > .add > .jpn-remove-row > .jpn-confirm-delete:hover > span.hover {
+    opacity:1;
+}
+
+.jpn-tabs-activated > .jpn-acf-tabs > .nav > ul > li > .jpn-acf-tab:focus {
+    -webkit-box-shadow:none !important;
+    box-shadow:none !important;
+}
+
+.jpn-tabs-activated > .jpn-acf-tabs > .nav > ul > li > .jpn-acf-tab.active {
+    border-bottom:1px solid #2b89a7;
+}
+
+.jpn-tabs-activated > .acf-repeater > .acf-table {
+    border: #00a0d2 solid 5px;
+    position:relative;
+}
+
+.jpn-tabs-activated > .acf-repeater > table > tbody > tr > td {
+    border-top:none;
+}
+
+.jpn-tabs-activated > .acf-repeater > ul.acf-actions > li > .jpn-tab-button {
+    margin-right:9px;
+}
+
+/* Duplication Functionality CSS */
+
+.jpn-tabs-activated > .jpn-acf-tabs > .nav > ul > li > .jpn-tab-hover,
+.jpn-tabs-activated > .jpn-acf-tabs > .add > ul > li > .jpn-tab-hover {
+    opacity:0;
+    pointer-events:none;
+    position:absolute;
+    min-height:30px;
+    background:#1d6977;
+    color:white;
+    -webkit-transition: 0.3s all;
+    transition:0.3s all;
+    -webkit-transition-delay:1s;
+    transition-delay:1s;
+    z-index:9991;
+    padding:0 7px;
+}
+
+.jpn-tabs-activated > .jpn-acf-tabs > .add > ul > li > .jpn-tab-hover {
+    background:#691212;
+    color:white;
+}
+
+.jpn-tabs-activated > .jpn-acf-tabs > .nav > ul > li > .jpn-tab-hover,
+.jpn-tabs-activated > .jpn-acf-tabs > .add > ul > li > .jpn-tab-hover {
+    right:90%;
+    top:0;
+    border-radius:7px 0 0 7px;
+    min-width:60px;
+    -moz-transform: rotate(0);
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    -webkit-font-smoothing: antialiased;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: translateZ(0); 
+}
+
+.jpn-tabs-activated > .jpn-acf-tabs > .nav > ul > li,
+.jpn-tabs-activated > .jpn-acf-tabs > .add > ul > li {
+    position:relative;
+}
+
+.jpn-tabs-activated > .jpn-acf-tabs > .nav > ul > li:hover > .jpn-tab-hover,
+.jpn-tabs-activated > .jpn-acf-tabs > .add > ul > li:hover > .jpn-tab-hover {
+    opacity:1;
+    pointer-events:all;
+    -webkit-transition-delay:0.5s;
+    transition-delay:0.5s;
+}
+
+.jpn-tabs-activated > .jpn-acf-tabs > .nav > ul > li:hover > .jpn-tab-hover,
+.jpn-tabs-activated > .jpn-acf-tabs > .add > ul > li:hover > .jpn-tab-hover {
+    right:100%;
+}
+
+.jpn-tabs-activated > .jpn-acf-tabs > .add > ul > li:hover > .jpn-tab-hover:after,
+.jpn-tabs-activated > .jpn-acf-tabs > .nav > ul > li:hover > .jpn-tab-hover:after {
+    content:'';
+    height:0;
+    width:0;
+    position:absolute;
+}
+
+.jpn-tabs-activated > .jpn-acf-tabs > .nav > ul > li:hover > .jpn-tab-hover:after,
+.jpn-tabs-activated > .jpn-acf-tabs > .add > ul > li:hover > .jpn-tab-hover:after {
+    right:-7px;
+    top:0;
+    border-top:15px solid transparent;
+    border-bottom:15px solid transparent;
+    border-left:7px solid #1d6977;
+}
+
+.jpn-tabs-activated > .jpn-acf-tabs > .add > ul > li:hover > .jpn-tab-hover:after {
+    border-left:7px solid #691212;
+}
+
+.jpn-tabs-activated > .jpn-acf-tabs > .nav > ul > li > .jpn-tab-hover > a,
+.jpn-tabs-activated > .jpn-acf-tabs > .add > ul > li > .jpn-tab-hover > a {
+    width:100%;
+    height:100%;
+    display:block;
+    text-align:center;
+}
+
+.jpn-tabs-activated > .jpn-acf-tabs > .nav > ul > li > .jpn-tab-hover > a,
+.jpn-tabs-activated > .jpn-acf-tabs > .nav > ul > li > .jpn-tab-hover > a > span,
+.jpn-tabs-activated > .jpn-acf-tabs > .add > ul > li > .jpn-tab-hover > a,
+.jpn-tabs-activated > .jpn-acf-tabs > .add > ul > li > .jpn-tab-hover > a > span {
+    color:white;
+    font-size:12px;
+    text-decoration: none;
+    line-height:30px;
+}
+
+.jpn-tabs-activated > .jpn-acf-tabs > .nav > ul > li > .jpn-tab-hover > a:hover,
+.jpn-tabs-activated > .jpn-acf-tabs > .nav > ul > li > .jpn-tab-hover > a:hover > span,
+.jpn-tabs-activated > .jpn-acf-tabs > .add > ul > li > .jpn-tab-hover > a:hover,
+.jpn-tabs-activated > .jpn-acf-tabs > .add > ul > li > .jpn-tab-hover > a:hover > span {
+    color:#ffba00;
+}
+/* = Vertical Tabs */
+.tabbed-repeater-vertical.jpn-tabs-activated > .jpn-acf-tabs > .nav > ul > li > .jpn-acf-tab > span  {border-radius: 0; min-width: 0; height: 100%; position: relative; top: 0; left: 0; background: transparent; color: #525252; line-height: 15px; font-weight: bold; text-align: center; pointer-events: none; -webkit-transform: none; transform: none; display: block; width: 100%}
+.tabbed-repeater-vertical.jpn-tabs-activated > .jpn-acf-tabs > .nav > ul > li > .jpn-acf-tab, 
+.tabbed-repeater-vertical.jpn-tabs-activated > .jpn-acf-tabs > .add > ul > li > .acf-button, 
+.tabbed-repeater-vertical.jpn-tabs-activated > .jpn-acf-tabs > .add > ul > li > .jpn-remove-row {height: 40px; padding: 5px; padding-left: 5px; width: 120px;}
+.tabbed-repeater-vertical.jpn-tabs-activated > .jpn-acf-tabs > .add > ul > li > .acf-button, 
+.tabbed-repeater-vertical.jpn-tabs-activated > .jpn-acf-tabs > .add > ul > li > .jpn-remove-row {background: transparent;  height: 30px;}
+.tabbed-repeater-vertical.jpn-tabs-activated > .jpn-acf-tabs > .nav > ul > li > .jpn-acf-tab.active:after {left: 13px; bottom: 7px; display: none;}
+.tabbed-repeater-vertical.jpn-tabs-activated > .jpn-acf-tabs > .nav > ul, .jpn-tabs-activated > .jpn-acf-tabs > .add > ul {width: 120px;}
+.tabbed-repeater-vertical.jpn-tabs-activated {padding-left: 120px;}
+.tabbed-repeater-vertical.jpn-tabs-activated > .jpn-acf-tabs > .nav > ul > li > .jpn-acf-tab, .jpn-tabs-activated > .jpn-acf-tabs > .add > ul > li > .acf-button, .jpn-tabs-activated > .jpn-acf-tabs > .add > ul > li > .jpn-remove-row {width: 120px;}
+.tabbed-repeater-vertical.jpn-tabs-activated > .jpn-acf-tabs > .nav > ul > li > .jpn-acf-tab.active {border: 1px solid #2b89a7;}
+.tabbed-repeater-vertical.jpn-tabs-activated > .jpn-acf-tabs > .nav > ul > li > .jpn-acf-tab.active > span {color: #f1f1f1;}
+.tabbed-repeater-vertical.jpn-tabs-activated > .jpn-acf-tabs > .add > ul > li > .acf-button > .dashicons,
+.tabbed-repeater-vertical.jpn-tabs-activated > .jpn-acf-tabs > .add > ul > li > .jpn-remove-row > .dashicons{color: #525252;}
+/* = Horizontal Tabs */
+.tabbed-repeater-top.jpn-tabs-activated > .jpn-acf-tabs {min-height: 20px; background: #f5f5f5; -webkit-box-sizing:border-box; box-sizing:border-box; position: relative; left: 0; top: 0;}
+.tabbed-repeater-top.jpn-tabs-activated > .jpn-acf-tabs > .nav > ul > li,
+.tabbed-repeater-top.jpn-tabs-activated > .jpn-acf-tabs > .add > ul > li {display: inline-block; position:relative;}
+.tabbed-repeater-top.jpn-tabs-activated > .jpn-acf-tabs > .nav > ul > li > .jpn-tab-hover,
+.tabbed-repeater-top.jpn-tabs-activated > .jpn-acf-tabs > .add > ul > li > .jpn-tab-hover {right:22px; top:-25px; min-height:25px; border-radius:7px; min-width:60px; -moz-transform: rotate(0); -webkit-backface-visibility: hidden; -webkit-perspective: 1000; -webkit-font-smoothing: antialiased; -webkit-transform-style: preserve-3d; -webkit-transform: translateZ(0);}
+.tabbed-repeater-top.jpn-tabs-activated > .jpn-acf-tabs > .nav > ul,
+.tabbed-repeater-top.jpn-tabs-activated > .jpn-acf-tabs > .add > ul {position:relative; padding:0; margin:0; list-style-type:none; width:auto;}
+.tabbed-repeater-top.jpn-tabs-activated { padding-left: 0; position: relative;}
+.tabbed-repeater-top.jpn-tabs-activated > .jpn-acf-tabs .nav,
+.tabbed-repeater-top.jpn-tabs-activated > .jpn-acf-tabs .add  {display: inline-block;}
+.tabbed-repeater-top.jpn-tabs-activated > .jpn-acf-tabs .add {position: absolute; width: 100%; top: -40px; right: 0;}
+.tabbed-repeater-top.jpn-tabs-activated > .jpn-acf-tabs .add > ul {display: inline-block; float: right;}
+.tabbed-repeater .acf-actions {display: none;}
+.tabbed-repeater .jpn-tab-hover {width: 60px;}
+.tabbed-repeater-top.jpn-tabs-activated > .jpn-acf-tabs > .nav > ul > li > .jpn-tab-hover > a,
+.tabbed-repeater-top.jpn-tabs-activated > .jpn-acf-tabs > .nav > ul > li > .jpn-tab-hover > a > span,
+.tabbed-repeater-top.jpn-tabs-activated > .jpn-acf-tabs > .add > ul > li > .jpn-tab-hover > a,
+.tabbed-repeater-top.jpn-tabs-activated > .jpn-acf-tabs > .add > ul > li > .jpn-tab-hover > a > span {color:white; font-size:12px; text-decoration: none; line-height:25px;}
+.tabbed-repeater-top.jpn-tabs-activated > .jpn-acf-tabs > .nav > ul > li:hover > .jpn-tab-hover:after,
+.tabbed-repeater-top.jpn-tabs-activated > .jpn-acf-tabs > .add > ul > li:hover > .jpn-tab-hover:after {border-top:none; border-bottom:none; border-left:none; content: " "; position: absolute; top: 17px; left: 10px; right:0px; border-width: 13px 24px; border-style: solid; border-color: #1d6977 transparent transparent transparent;pointer-events: none;}
+.tabbed-repeater-top.jpn-tabs-activated > .jpn-acf-tabs > .nav > ul > li > .jpn-acf-tab, 
+.tabbed-repeater-top.jpn-tabs-activated > .jpn-acf-tabs > .add > ul > li > .acf-button, 
+.tabbed-repeater-top.jpn-tabs-activated > .jpn-acf-tabs > .add > ul > li > .jpn-remove-row {height: 40px; padding: 5px; padding-left: 5px; width: 120px; text-align: center;}
+.tabbed-repeater-top.jpn-tabs-activated > .jpn-acf-tabs > .add > ul > li > .acf-button, 
+.tabbed-repeater-top.jpn-tabs-activated > .jpn-acf-tabs > .add > ul > li > .jpn-remove-row  {width: 45px;}
+.tabbed-repeater-top.jpn-tabs-activated > .jpn-acf-tabs > .nav > ul > li > .jpn-acf-tab > span  {border-radius: 0; min-width: 0; height: 100%; position: relative; top: 0; left: 0; background: transparent; color: #525252; line-height: 15px; font-weight: bold; text-align: center; pointer-events: none; -webkit-transform: none; transform: none; display: inline-block;}
+.tabbed-repeater-top.jpn-tabs-activated > .jpn-acf-tabs > .nav > ul > li > .jpn-acf-tab.active:after {left: 13px; bottom: 7px; display: none;}
+.tabbed-repeater-top.jpn-tabs-activated > .jpn-acf-tabs > .add > ul > li > .acf-button > .dashicons,
+.tabbed-repeater-top.jpn-tabs-activated > .jpn-acf-tabs > .add > ul > li > .jpn-remove-row > .dashicons{position: absolute; left: 12px; bottom: 9px;}
+.tabbed-repeater-top.jpn-tabs-activated > .jpn-acf-tabs > .nav > ul > li > .jpn-acf-tab.active > span {color: #f1f1f1;}
+/* Planet Jump Testimonials Custom Width Tabs */
+.update-tab-title .tabbed-repeater-top.jpn-tabs-activated > .jpn-acf-tabs > .nav > ul > li > .jpn-acf-tab {width: 50px;}
+.update-tab-title .tabbed-repeater-top.jpn-tabs-activated > .jpn-acf-tabs > .nav > ul > li > .jpn-tab-hover, .tabbed-repeater-top.jpn-tabs-activated > .jpn-acf-tabs > .add > ul > li > .jpn-tab-hover {right: -15px;}
+.tabbed-repeater-vertical {min-height: 550px;}
+/* Mark Drugs Feature Boxes */
+.acf-field.new-tab-selector > .acf-label {display: inline-block; margin: 6px 10px 0 0; }
+.acf-field.new-tab-selector > .acf-input {display: inline-block; }
+.acf-field.feature-box-image > .acf-label > label {display: inline-block;}
+.acf-field.feature-box-image > .acf-label > .description {display: inline-block; float: right;}
+/* 5 Column Repeater */
+.repeater-5-col .acf-table > tbody > tr {z-index: 1; display: inline-block; width: 20%;}
+.repeater-5-col .acf-row > .acf-fields {width: 92%;}
+/* 4 Column Repeater */
+.repeater-4-col .acf-table > tbody > tr {z-index: 1; display: inline-block; width: 25%;}
+.repeater-4-col .acf-row > .acf-fields {width: 92%;}
+/* 3 Column Repeater */
+.repeater-3-col .acf-table > tbody > tr {z-index: 1; display: inline-block; width: 33%;}
+.repeater-3-col .acf-row > .acf-fields {width: 100%;}
+/* 2 Column Repeater */
+.repeater-2-col .acf-table > tbody > tr {z-index: 1; display: inline-block; width: 50%;}
+.repeater-2-col .acf-row > .acf-fields {width: 100%;}
+/* Removes 'Thank you for using WordPress' footer */
+#wpfooter {display: none;}
+#revisionsdiv {display: none;}
+/* DW */
+.repeater-dw .tabbed-repeater-top.jpn-tabs-activated > .jpn-acf-tabs .add {top:auto; bottom: -100px; right: 8px; z-index: 2; width: auto;}
+.repeater-dw .tabbed-repeater-top.jpn-tabs-activated > .jpn-acf-tabs > .add > ul > li {display: block;}
+.repeater-dw .acf-field {max-width: 90%;}
+.repeater-dw .acf-field-image {min-height: 200px;}
+.repeater-dw .acf-table tbody {background: #fff;}
+.repeater-dw .acf-repeater .acf-row:hover > .acf-row-handle.remove .acf-icon {display: none;}
+.repeater-dw .acf-repeater .acf-row > .acf-row-handle.remove {width: 36px;}
+.repeater-dw .tabbed-repeater-top.jpn-tabs-activated > .jpn-acf-tabs > .nav > ul > li > .jpn-acf-tab > span {display: block; text-align: center; line-height: 1; top: 5px;}
+.jpn-acf-tab  {z-index: 2; margin-top: -5px;}

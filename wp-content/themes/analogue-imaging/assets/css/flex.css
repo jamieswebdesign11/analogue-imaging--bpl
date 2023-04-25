@@ -1,0 +1,35 @@
+.flex-display{display:flex;flex-wrap:wrap;}
+.flex-display-align{display:flex;align-items:center;flex-wrap:wrap;}
+.flex-col-full{flex-basis:0;flex-grow:1;}
+.flex-10-full{width:10%;}.flex-20-full{width:20%;}.flex-30-full{width:30%;}.flex-40-full{width:40%}.flex-50-full{width:50%;}.flex-60-full{width:60%;}.flex-70-full{width:70%;}.flex-80-full{width:80%;}.flex-90-full{width:90%;}
+/* Media Queries */
+@media screen and (min-width:1201px){
+    /* Large Flex Columns Equal Width: */
+    .flex-col-lg{flex-basis:0;flex-grow:1;}
+    /* Large Specified Width Flex Columns: */
+    .flex-5-lg{width:5%;}.flex-10-lg{width:10%;}.flex-15-lg{width:15%;}.flex-20-lg{width:20%;}.flex-30-lg{width:30%;}.flex-40-lg{width:40%}.flex-50-lg{width:50%;}.flex-60-lg{width:60%;}.flex-70-lg{width:70%;}.flex-80-lg{width:80%;}.flex-90-lg{width:90%;}
+}
+@media screen and (min-width:992px){
+    /* Equal Width Flex Columns: */
+    .flex-col{flex-basis:0;flex-grow:1;}
+    /* Specified Width Flex Columns: */
+    .flex-5{width:5%;}.flex-10{width:10%;}.flex-15{width:15%;}.flex-20{width:20%;}.flex-30{width:30%;}.flex-40{width:40%}.flex-50{width:50%;}.flex-60{width:60%;}.flex-70{width:70%;}.flex-80{width:80%;}.flex-90{width:90%;}
+}
+@media screen and (min-width:768px){
+    /* Extra Small Flex Columns Equal Width: */
+    .flex-col-sm{flex-basis:0;flex-grow:1;}
+    /* Small Specified Width Flex Columns: */
+    .flex-5-sm{width:5%;}.flex-10-sm{width:10%;}.flex-15-sm{width:15%;}.flex-20-sm{width:20%;}.flex-30-sm{width:30%;}.flex-40-sm{width:40%}.flex-50-sm{width:50%;}.flex-60-sm{width:60%;}.flex-70-sm{width:70%;}.flex-80-sm{width:80%;}.flex-90-sm{width:90%;}
+}
+@media screen and (max-width:1200px){
+   /* Full width columns on medium sizes */
+    .flex-col-lg, .flex-5-lg, .flex-10-lg, .flex-15-lg, .flex-20-lg, .flex-30-lg, .flex-40-lg, .flex-50-lg, .flex-60-lg, .flex-70-lg, .flex-80-lg, .flex-90-lg{width:100%;}
+}
+@media screen and (max-width:991px){
+    /* Full width columns on small sizes */
+    .flex-col, .flex-5, .flex-10, .flex-15, .flex-20, .flex-30, .flex-40, .flex-50, .flex-60, .flex-70, .flex-80, .flex-90{width:100%;}
+}
+@media screen and (max-width:767px){
+   /* Full width columns on extra small sizes */
+    .flex-col-sm, .flex-5-sm, .flex-10-sm, .flex-15-sm, .flex-20-sm, .flex-30-sm, .flex-40-sm, .flex-50-sm, .flex-60-sm, .flex-70-sm, .flex-80-sm, .flex-90-sm{width:100%;}
+}

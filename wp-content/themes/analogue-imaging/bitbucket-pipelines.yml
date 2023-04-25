@@ -1,0 +1,15 @@
+image: samueldebruyn/debian-git
+
+pipelines:
+  default:
+    - step:
+        script:
+          - echo "Ready For Production"
+    - step:
+        name: Push To Production
+        trigger: manual
+        script:
+          - apt-get update
+          - apt-get -qq install git-ftp
+          - git ftp push --user $ftpUserName --passwd $ftpPassWord $ftpHostLocation
+          
